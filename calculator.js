@@ -47,5 +47,5 @@ function calculator(newString) {
       numbers.splice(i+1,1);
       i--;
 }
-  return numbers[0];
+  return isNaN(numbers[0]) ? 'Введено более пяти слагаемых' : numbers[0];
 }
